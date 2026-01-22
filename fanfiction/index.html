@@ -6,21 +6,38 @@
   <title>FANFICTION | Decepticon Base</title>
 </head>
 <body>
-  <h1>FANFICTION</h1>
+ <div style="display:flex; min-height:100vh;">
 
-  <p>
-    This section hosts Transformers fanfiction.
-    Stories may be long-form, multi-chapter, or one-shots.
-  </p>
+  <div id="sidebar"></div>
 
-  <ul>
-    <li>Raider-verse (coming soon)</li>
-    <li>One-shots (coming soon)</li>
-    <li>Alternate continuities (coming soon)</li>
-  </ul>
+  <div style="flex:1; padding:20px; background:#0b0f14; color:#e7eef8; box-sizing:border-box;">
+    <h1>FANFICTION</h1>
 
-  <p>
-    <a href="../index.html">Back to Home</a>
-  </p>
+    <p>
+      This section hosts Transformers fanfiction.
+      Stories may be long-form, multi-chapter, or one-shots.
+    </p>
+
+    <ul>
+      <li>Raider-verse (coming soon)</li>
+      <li>One-shots (coming soon)</li>
+      <li>Alternate continuities (coming soon)</li>
+    </ul>
+
+    <div id="footer"></div>
+  </div>
+
+</div>
+
+<script>
+  fetch("/Decepticon-Base/sidebar.html")
+    .then(r => r.text())
+    .then(html => document.getElementById("sidebar").innerHTML = html);
+
+  fetch("/Decepticon-Base/footer.html")
+    .then(r => r.text())
+    .then(html => document.getElementById("footer").innerHTML = html);
+</script>
+
 </body>
 </html>
