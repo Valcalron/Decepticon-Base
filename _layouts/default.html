@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title | default: "Decepticon Base" }}</title>
+  <style>
+    :root{
+      --bg1:#05060a;
+      --panel:#070a0e;
+      --border:rgba(255,255,255,0.14);
+      --text:#e7eef8;
+      --link:#9cc7ff;
+      --sidebar:220px;
+    }
+    *{box-sizing:border-box;}
+    body{
+      margin:0;
+      background: var(--bg1);
+      color:var(--text);
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    /* FULL-WIDTH WRAPPER */
+    .page{
+      min-height:100vh;
+      display:flex;
+      flex-direction:column;
+    }
+
+    /* TOP BANNER (full width) */
+    .banner{
+      width:100%;
+      border-bottom:1px solid var(--border);
+      background:#02030a;
+    }
+    .banner img{
+      width:100%;
+      height:auto;
+      display:block;
+    }
+
+    /* MAIN AREA */
+    .main{
+      flex:1;
+      display:flex;
+      width:100%;
+    }
+
+    /* LEFT NAV */
+    .nav{
+      width:var(--sidebar);
+      background: #05070f;
+      border-right:1px solid var(--border);
+      padding:12px 10px;
+    }
+    .nav a{
+      display:block;
+      margin:6px 0;
+      padding:8px 10px;
+      color:var(--link);
+      text-decoration:none;
+      border-radius:8px;
+    }
+    .nav a:hover{
+      background: rgba(255,255,255,0.05);
+      border:1px solid rgba(255,255,255,0.12);
+    }
+
+    /* CONTENT PANEL (big center area like your screenshot) */
+    .content{
+      flex:1;
+      padding:16px;
+      background: radial-gradient(circle at top, rgba(90,0,160,0.25), transparent 55%);
+    }
+    .content-inner{
+      max-width: 1100px;     /* change this to 1400px if you want it wider */
+      margin: 0 auto;
+      border:1px solid var(--border);
+      background: rgba(0,0,0,0.65);
+      padding:16px;
+      min-height: 70vh;
+    }
+
+    /* FOOTER */
+    .footer{
+      border-top:1px solid var(--border);
+      background:#02030a;
+      padding:10px 12px;
+      font-size:12px;
+      opacity:0.85;
+    }
+    .footer a{ color:var(--link); }
+
+    /* MOBILE */
+    @media (max-width: 860px){
+      .main{ flex-direction:column; }
+      .nav{ width:100%; border-right:none; border-bottom:1px solid var(--border); }
+      .content-inner{ max-width: 100%; }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="page">
+
+    <!-- Full-width banner (replace the src with your banner path) -->
+    <div class="banner">
+      <img src="/Decepticon-Base/assets/banner.jpg" alt="Decepticon Base banner">
+    </div>
+
+    <div class="main">
+
+      <!-- Left navigation (text for now; later we’ll swap to your button images) -->
+      <div class="nav">
+        <a href="/Decepticon-Base/">HOME</a>
+        <a href="/Decepticon-Base/hmw/">HMW</a>
+        <a href="/Decepticon-Base/art/">ART</a>
+        <a href="https://forumsoundwave.jcink.net/index.php?act=idx" target="_blank" rel="noopener">FORUM</a>
+        <a href="/Decepticon-Base/fanfiction/">FANFICTION</a>
+        <a href="/Decepticon-Base/commissions/">COMMISSIONS</a>
+        <a href="/Decepticon-Base/sigs-gifts/">SIGS AND GIFTS</a>
+        <a href="/Decepticon-Base/lore/">LORE</a>
+        <a href="/Decepticon-Base/dda/">DDA</a>
+        <a href="/Decepticon-Base/disclaimer.html">DISCLAIMER</a>
+      </div>
+
+      <!-- Page content -->
+      <div class="content">
+        <div class="content-inner">
+          {{ content }}
+        </div>
+      </div>
+
+    </div>
+
+    <div class="footer">
+      Transformers is property of Hasbro. This is a non-commercial fan site. No profit is made.
+      <a href="/Decepticon-Base/disclaimer.html">Disclaimer</a>
+    </div>
+
+  </div>
+</body>
+</html>
