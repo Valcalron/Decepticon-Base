@@ -4,6 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ page.title | default: "Decepticon Base" }}</title>
+  
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
 
   <style>
     :root{
@@ -18,7 +22,7 @@
     /* ===== BODY: CYBERTRON BACKGROUND ON EVERY PAGE ===== */
     body{
       margin:0;
-      font-family: Arial, Helvetica, sans-serif;
+     font-family: Verdana, Arial, sans-serif;
       color:var(--text);
 
       /* Cybertron background */
@@ -119,6 +123,10 @@
         border-bottom:1px solid var(--border);
       }
       .content-inner{ max-width:100%; }
+      h1, h2, h3{
+  font-family: "Orbitron", Arial, sans-serif;
+}
+
       .banner img{ height:180px; }
     }
   </style>
