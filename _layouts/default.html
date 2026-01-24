@@ -4,59 +4,67 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ page.title | default: "Decepticon Base" }}</title>
+
   <style>
     :root{
-      --bg1:#05060a;
-      --panel:#070a0e;
       --border:rgba(255,255,255,0.14);
       --text:#e7eef8;
       --link:#9cc7ff;
       --sidebar:220px;
     }
-    *{box-sizing:border-box;}
+
+    *{ box-sizing:border-box; }
+
+    /* ===== BODY: CYBERTRON BACKGROUND ON EVERY PAGE ===== */
     body{
       margin:0;
-      background: var(--bg1);
-      color:var(--text);
       font-family: Arial, Helvetica, sans-serif;
+      color:var(--text);
+
+      /* Cybertron background */
+      background-image: url("{{ '/assets/Cybertron.png' | relative_url }}");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed; /* scroll over background */
     }
 
-    /* FULL-WIDTH WRAPPER */
+    /* FULL PAGE WRAPPER */
     .page{
       min-height:100vh;
       display:flex;
       flex-direction:column;
     }
 
-    /* TOP BANNER (full width) */
+    /* ===== TOP BANNER ===== */
     .banner{
       width:100%;
       border-bottom:1px solid var(--border);
-      background:#02030a;
+      background: rgba(0,0,0,0.85);
     }
+
     .banner img{
-  width: 100%;
-  height: 600px;     
-  object-fit: cover;
-        display: block;
-}
-
+      width:100%;
+      height:260px;          /* adjust: 180 small, 260 medium, 340 tall */
+      object-fit:cover;
+      display:block;
     }
 
-    /* MAIN AREA */
+    /* ===== MAIN LAYOUT ===== */
     .main{
       flex:1;
       display:flex;
       width:100%;
     }
 
-    /* LEFT NAV */
+    /* ===== LEFT NAV ===== */
     .nav{
       width:var(--sidebar);
-      background: #05070f;
+      background: rgba(0,0,0,0.75);
       border-right:1px solid var(--border);
       padding:12px 10px;
     }
+
     .nav a{
       display:block;
       margin:6px 0;
@@ -65,41 +73,53 @@
       text-decoration:none;
       border-radius:8px;
     }
+
     .nav a:hover{
-      background: rgba(255,255,255,0.05);
+      background: rgba(255,255,255,0.07);
       border:1px solid rgba(255,255,255,0.12);
     }
 
-    /* CONTENT PANEL (big center area like your screenshot) */
+    /* ===== CONTENT AREA ===== */
     .content{
       flex:1;
-      padding:16px;
-      background: radial-gradient(circle at top, rgba(90,0,160,0.25), transparent 55%);
-    }
-    .content-inner{
-      max-width: 1100px;     /* change this to 1400px if you want it wider */
-      margin: 0 auto;
-      border:1px solid var(--border);
-      background: rgba(0,0,0,0.65);
-      padding:16px;
-      min-height: 70vh;
+      padding:18px;
     }
 
-    /* FOOTER */
+    .content-inner{
+      max-width:1100px;
+      margin:0 auto;
+      padding:18px;
+      min-height:70vh;
+
+      /* dark glass panel so text is readable over Cybertron */
+      background: rgba(0,0,0,0.72);
+      border:1px solid var(--border);
+      border-radius:12px;
+    }
+
+    /* ===== FOOTER ===== */
     .footer{
       border-top:1px solid var(--border);
-      background:#02030a;
+      background: rgba(0,0,0,0.85);
       padding:10px 12px;
       font-size:12px;
-      opacity:0.85;
+      opacity:0.9;
     }
-    .footer a{ color:var(--link); }
 
-    /* MOBILE */
+    .footer a{
+      color:var(--link);
+    }
+
+    /* ===== MOBILE FIX ===== */
     @media (max-width: 860px){
       .main{ flex-direction:column; }
-      .nav{ width:100%; border-right:none; border-bottom:1px solid var(--border); }
-      .content-inner{ max-width: 100%; }
+      .nav{
+        width:100%;
+        border-right:none;
+        border-bottom:1px solid var(--border);
+      }
+      .content-inner{ max-width:100%; }
+      .banner img{ height:180px; }
     }
   </style>
 </head>
@@ -107,29 +127,32 @@
 <body>
   <div class="page">
 
-    <!-- Full-width banner (replace the src with your banner path) -->
+    <!-- TOP BANNER -->
     <div class="banner">
-      <img src="/Decepticon-Base/assets/Decepticonbannor1.jpg" alt="Decepticon Base banner">
-
+      <img src="{{ '/assets/Decepticonbannor1.jpg' | relative_url }}"
+           alt="Decepticon Base banner">
     </div>
 
     <div class="main">
 
-      <!-- Left navigation (text for now; later we’ll swap to your button images) -->
+      <!-- LEFT NAVIGATION -->
       <div class="nav">
-        <a href="/Decepticon-Base/">HOME</a>
-        <a href="/Decepticon-Base/hmw/">HMW</a>
-        <a href="/Decepticon-Base/art/">ART</a>
-        <a href="https://forumsoundwave.jcink.net/index.php?act=idx" target="_blank" rel="noopener">FORUM</a>
-        <a href="/Decepticon-Base/fanfiction/">FANFICTION</a>
-        <a href="/Decepticon-Base/commissions/">COMMISSIONS</a>
-        <a href="/Decepticon-Base/sigs-gifts/">SIGS AND GIFTS</a>
-        <a href="/Decepticon-Base/lore/">LORE</a>
-        <a href="/Decepticon-Base/dda/">DDA</a>
-        <a href="/Decepticon-Base/disclaimer.html">DISCLAIMER</a>
+        <a href="{{ '/' | relative_url }}">HOME</a>
+        <a href="{{ '/hmw/' | relative_url }}">HMW</a>
+        <a href="{{ '/art/' | relative_url }}">ART</a>
+
+        <a href="https://forumsoundwave.jcink.net/index.php?act=idx"
+           target="_blank" rel="noopener">FORUM</a>
+
+        <a href="{{ '/fanfiction/' | relative_url }}">FANFICTION</a>
+        <a href="{{ '/commissions/' | relative_url }}">COMMISSIONS</a>
+        <a href="{{ '/sigs-gifts/' | relative_url }}">SIGS AND GIFTS</a>
+        <a href="{{ '/lore/' | relative_url }}">LORE</a>
+        <a href="{{ '/dda/' | relative_url }}">DDA</a>
+        <a href="{{ '/disclaimer.html' | relative_url }}">DISCLAIMER</a>
       </div>
 
-      <!-- Page content -->
+      <!-- PAGE CONTENT -->
       <div class="content">
         <div class="content-inner">
           {{ content }}
@@ -138,9 +161,10 @@
 
     </div>
 
+    <!-- FOOTER -->
     <div class="footer">
       Transformers is property of Hasbro. This is a non-commercial fan site. No profit is made.
-      <a href="/Decepticon-Base/disclaimer.html">Disclaimer</a>
+      <a href="{{ '/disclaimer.html' | relative_url }}">Disclaimer</a>
     </div>
 
   </div>
