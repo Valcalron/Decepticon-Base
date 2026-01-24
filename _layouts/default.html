@@ -3,14 +3,13 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
- <title>{{ page.title | default: "Decepticon Base" }}</title>
+  <title>{{ page.title | default: "Decepticon Base" }}</title>
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
 
-<style>
-
+  <style>
     :root{
       --border:rgba(255,255,255,0.14);
       --text:#e7eef8;
@@ -20,28 +19,24 @@
 
     *{ box-sizing:border-box; }
 
-    /* ===== BODY: CYBERTRON BACKGROUND ON EVERY PAGE ===== */
-  body{
-  margin:0;
-  font-family: "Orbitron", Arial, sans-serif;
-  color:var(--text);
-  background-image: url("{{ '/assets/Cybertronleft.png' | relative_url }}");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
+    body{
+      margin:0;
+      font-family: "Orbitron", Arial, sans-serif;
+      color:var(--text);
 
+      background-image: url("{{ '/assets/Cybertronleft.png' | relative_url }}");
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
     }
 
-    /* FULL PAGE WRAPPER */
     .page{
       min-height:100vh;
       display:flex;
       flex-direction:column;
     }
 
-    /* ===== TOP BANNER ===== */
     .banner{
       width:100%;
       border-bottom:1px solid var(--border);
@@ -50,19 +45,17 @@
 
     .banner img{
       width:100%;
-      height:260px;          /* adjust: 180 small, 260 medium, 340 tall */
+      height:260px;
       object-fit:cover;
       display:block;
     }
 
-    /* ===== MAIN LAYOUT ===== */
     .main{
       flex:1;
       display:flex;
       width:100%;
     }
 
-    /* ===== LEFT NAV ===== */
     .nav{
       width:var(--sidebar);
       background: rgba(0,0,0,0.75);
@@ -84,7 +77,6 @@
       border:1px solid rgba(255,255,255,0.12);
     }
 
-    /* ===== CONTENT AREA ===== */
     .content{
       flex:1;
       padding:18px;
@@ -95,14 +87,11 @@
       margin:0 auto;
       padding:18px;
       min-height:70vh;
-
-      /* dark glass panel so text is readable over Cybertron */
       background: rgba(0,0,0,0.72);
       border:1px solid var(--border);
       border-radius:12px;
     }
 
-    /* ===== FOOTER ===== */
     .footer{
       border-top:1px solid var(--border);
       background: rgba(0,0,0,0.85);
@@ -111,28 +100,26 @@
       opacity:0.9;
     }
 
-    .footer a{
-      color:var(--link);
+    .footer a{ color:var(--link); }
+
+    h1, h2, h3{
+      font-family: "Orbitron", Arial, sans-serif;
+      letter-spacing: 1px;
     }
-h1, h2, h3{
-  font-family: "Orbitron", Arial, sans-serif;
-  letter-spacing: 1px;
-}
 
-    /* ===== MOBILE FIX ===== */
-  @media (max-width: 860px){
-  .main{ flex-direction:column; }
-  .nav{
-    width:100%;
-    border-right:none;
-    border-bottom:1px solid var(--border);
-  }
-  .content-inner{ max-width:100%; }
-  .banner img{ height:180px; }
-}
-
+    @media (max-width: 860px){
+      .main{ flex-direction:column; }
+      .nav{
+        width:100%;
+        border-right:none;
+        border-bottom:1px solid var(--border);
+      }
+      .content-inner{ max-width:100%; }
+      .banner img{ height:180px; }
+    }
   </style>
 </head>
+
 }
 
       .banner img{ height:180px; }
