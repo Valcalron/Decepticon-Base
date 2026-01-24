@@ -23,7 +23,6 @@
       margin:0;
       font-family: "Orbitron", Arial, sans-serif;
       color:var(--text);
-
       background-image: url("{{ '/assets/Cybertronleft.png' | relative_url }}");
       background-size: cover;
       background-position: center;
@@ -120,33 +119,20 @@
   </style>
 </head>
 
-}
-
-      .banner img{ height:180px; }
-    }
-  </style>
-</head>
-
 <body>
   <div class="page">
 
-    <!-- TOP BANNER -->
     <div class="banner">
-      <img src="{{ '/assets/Decepticonbannor1.jpg' | relative_url }}"
-           alt="Decepticon Base banner">
+      <img src="{{ '/assets/Decepticonbannor1.jpg' | relative_url }}" alt="Decepticon Base banner">
     </div>
 
     <div class="main">
 
-      <!-- LEFT NAVIGATION -->
       <div class="nav">
         <a href="{{ '/' | relative_url }}">HOME</a>
         <a href="{{ '/hmw/' | relative_url }}">HMW</a>
         <a href="{{ '/art/' | relative_url }}">ART</a>
-
-        <a href="https://forumsoundwave.jcink.net/index.php?act=idx"
-           target="_blank" rel="noopener">FORUM</a>
-
+        <a href="https://forumsoundwave.jcink.net/index.php?act=idx" target="_blank" rel="noopener">FORUM</a>
         <a href="{{ '/fanfiction/' | relative_url }}">FANFICTION</a>
         <a href="{{ '/commissions/' | relative_url }}">COMMISSIONS</a>
         <a href="{{ '/sigs-gifts/' | relative_url }}">SIGS AND GIFTS</a>
@@ -155,7 +141,6 @@
         <a href="{{ '/disclaimer.html' | relative_url }}">DISCLAIMER</a>
       </div>
 
-      <!-- PAGE CONTENT -->
       <div class="content">
         <div class="content-inner">
           {{ content }}
@@ -164,13 +149,10 @@
 
     </div>
 
-    <!-- FOOTER -->
     <div class="footer">
-  Transformers is property of Hasbro. This is a non-commercial fan site. No profit is made.
-  <a href="{{ '/disclaimer.html' | relative_url }}">Disclaimer</a>
-  <span style="margin-left:10px; color:#9cc7ff;">UPDATED TEST 001</span>
-</div>
-
+      Transformers is property of Hasbro. This is a non-commercial fan site. No profit is made.
+      <a href="{{ '/disclaimer.html' | relative_url }}">Disclaimer</a>
+    </div>
 
   </div>
 </body>
