@@ -37,14 +37,57 @@ title: Thundertron
 
 <h2>Tech Specs</h2>
 
-<p><strong>Strength:</strong> 9</p>
-<p><strong>Intelligence:</strong> 8</p>
-<p><strong>Speed:</strong> 5</p>
-<p><strong>Endurance:</strong> 10</p>
-<p><strong>Rank:</strong> 10</p>
-<p><strong>Courage:</strong> 9</p>
-<p><strong>Firepower:</strong> 10</p>
-<p><strong>Skill:</strong> 7</p>
+<div class="techspecs">
+
+  <div class="stat">
+    <span class="label">STR:</span>
+    <div class="bar"><div class="fill" style="width:90%;"></div></div>
+    <span class="num">9</span>
+  </div>
+
+  <div class="stat">
+    <span class="label">INT:</span>
+    <div class="bar"><div class="fill" style="width:80%;"></div></div>
+    <span class="num">8</span>
+  </div>
+
+  <div class="stat">
+    <span class="label">SPD:</span>
+    <div class="bar"><div class="fill" style="width:50%;"></div></div>
+    <span class="num">5</span>
+  </div>
+
+  <div class="stat">
+    <span class="label">END:</span>
+    <div class="bar"><div class="fill" style="width:100%;"></div></div>
+    <span class="num">10</span>
+  </div>
+
+  <div class="stat">
+    <span class="label">RNK:</span>
+    <div class="bar"><div class="fill" style="width:100%;"></div></div>
+    <span class="num">10</span>
+  </div>
+
+  <div class="stat">
+    <span class="label">CRG:</span>
+    <div class="bar"><div class="fill" style="width:90%;"></div></div>
+    <span class="num">9</span>
+  </div>
+
+  <div class="stat">
+    <span class="label">FRP:</span>
+    <div class="bar"><div class="fill" style="width:100%;"></div></div>
+    <span class="num">10</span>
+  </div>
+
+  <div class="stat">
+    <span class="label">SKL:</span>
+    <div class="bar"><div class="fill" style="width:70%;"></div></div>
+    <span class="num">7</span>
+  </div>
+
+</div>
 
 <hr>
 
