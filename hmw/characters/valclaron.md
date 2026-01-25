@@ -15,7 +15,6 @@ title: Valclaron
        ">
 </div>
 
-<h1 style="margin-top:15px;">Valclaron</h1>
 
 <p style="font-style:italic;">
   "My name is and forever will be legend.”
