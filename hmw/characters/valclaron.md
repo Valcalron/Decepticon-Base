@@ -5,7 +5,7 @@ title: Valclaron
 
 <!-- Name GIF -->
 <div>
-  <img src="{{ '/assets/hmw-names/valclaron.gif' | relative_url }}"
+  <img src="{{ 'assets/hmw-names/Valclaron Eng.gif' | relative_url }}"
        alt="Valclaron"
        style="width:260px; height:auto;">
 </div>
