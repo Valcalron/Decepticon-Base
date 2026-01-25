@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype html> 
 <html lang="en">
 <head>
   <meta charset="utf-8" />
@@ -45,9 +45,13 @@
 
     .banner img{
       width:100%;
-      height:500px;
+      height:260px;
       object-fit:cover;
       display:block;
+    }
+
+    .home .banner img {
+      height: 450px;  /* Adjust as needed */
     }
 
     .main{
@@ -117,18 +121,17 @@
       .content-inner{ max-width:100%; }
       .banner img{ height:180px; }
     }
+
   </style>
 </head>
 
-<body>
+<body class="{{ page.body_class }}"> <!-- Add body_class for Home page customization -->
   <div class="page">
-
     <div class="banner">
       <img src="{{ '/assets/Decepticonbannor1.jpg' | relative_url }}" alt="Decepticon Base banner">
     </div>
 
     <div class="main">
-
       <div class="nav">
         <a href="{{ '/' | relative_url }}">HOME</a>
         <a href="{{ '/hmw/' | relative_url }}">HMW</a>
@@ -147,7 +150,6 @@
           {{ content }}
         </div>
       </div>
-
     </div>
 
     <div class="footer">
