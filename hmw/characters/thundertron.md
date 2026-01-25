@@ -4,7 +4,7 @@ title: Thundertron
 ---
 
 <!-- Thundertron Name GIF -->
-<div style="text-align:center;">
+<div style="text-align:left;">
   <img src="{{ '/assets/hmw-names/thundertronopy.gif' | relative_url }}"
        alt="Thundertron"
        style="width:220px; height:auto; display:block; margin:0 auto;">
@@ -15,7 +15,7 @@ title: Thundertron
 <p style="text-align:center; font-style:italic;">“All shall be laid to dust at my feet—only then shall I stand at my brother’s side.”</p>
 
 <!-- Basic Information -->
-<div style="margin-top:20px; text-align:center;">
+<div style="margin-top:20px; text-align:left;">
   <p><strong>Faction:</strong> Decepticon</p>
   <p><strong>Current Function:</strong> Commander of Amalgamated Pretense</p>
   <p><strong>Level:</strong> 11</p>
@@ -28,8 +28,8 @@ title: Thundertron
 </div>
 
 <!-- Tech Specs -->
-<h2 style="text-align:center; margin-top:30px;">Tech Specs</h2>
-<div style="text-align:center;">
+<h2 style="text-align:left; margin-top:30px;">Tech Specs</h2>
+<div style="text-align:left;">
   <p><strong>Strength:</strong> 9</p>
   <p><strong>Intelligence:</strong> 8</p>
   <p><strong>Speed:</strong> 5</p>
@@ -41,20 +41,20 @@ title: Thundertron
 </div>
 
 <!-- Signature -->
-<h2 style="text-align:center; margin-top:30px;">Signature</h2>
-<div style="text-align:center;">
+<h2 style="text-align:left; margin-top:30px;">Signature</h2>
+<div style="text-align:left;">
   <img src="{{ 'assets/hmwsignatures/Thundertron Decep.gif' | relative_url }}" alt="Thundertron Signature" style="max-width:100%; height:auto;">
 </div>
 
 <!-- Appearance -->
-<h2 style="text-align:center; margin-top:30px;">Appearance</h2>
-<div style="text-align:center; margin-bottom:20px;">
+<h2 style="text-align:left; margin-top:30px;">Appearance</h2>
+<div style="text-align:left; margin-bottom:20px;">
   <p>Thundertron is towering and solidly built, his armor layered in nine tons of electrum plating—black at first glance, with streaks of midnight blue only visible in the right light. His features echo Megatron’s, but with heavier plating and a turreted alt mode that anchors him in place when deployed. His base transforms into a 180-degree rotation cannon platform, locking his arms in position for full stabilization during fusion-blast deployment.</p>
 </div>
 
 <!-- Weapons Systems -->
-<h2 style="text-align:center; margin-top:30px;">Weapons Systems</h2>
-<div style="text-align:center;">
+<h2 style="text-align:left; margin-top:30px;">Weapons Systems</h2>
+<div style="text-align:left;">
   <p><strong>Primary Melee (Robot Mode):</strong> Two-handed battle axe with fusion-reactive edge and backspike</p>
   <p><strong>Ranged (Robot Mode):</strong> Retractable shoulder-mounted machine guns</p>
   <p><strong>Heavy Artillery (Alt Mode):</strong> Fusion Blast Cannon, long-range, armor-piercing</p>
@@ -62,8 +62,8 @@ title: Thundertron
 </div>
 
 <!-- Upgrades -->
-<h2 style="text-align:center; margin-top:30px;">Upgrades</h2>
-<div style="text-align:center;">
+<h2 style="text-align:left; margin-top:30px;">Upgrades</h2>
+<div style="text-align:left;">
   <ul>
     <li>Reflex Core Recalibration</li>
     <li>Processor Sync Uplink</li>
@@ -73,22 +73,22 @@ title: Thundertron
 </div>
 
 <!-- Background -->
-<h2 style="text-align:center; margin-top:30px;">Background</h2>
-<div style="text-align:center; margin-bottom:20px;">
+<h2 style="text-align:left; margin-top:30px;">Background</h2>
+<div style="text-align:left; margin-bottom:20px;">
   <p>Thundertron is the unintended product of a spark-split during Megatron’s augmentation process. Shockwave captured the fragment and raised it in secret, growing it into a fully formed Transformer without ever revealing the spark's origin. Thundertron spent his youth under Shockwave’s instruction—unquestioning until, at age 12, he snuck into the Kaon gladiator pits and witnessed combat for the first time. Inspired by the legendary warrior Valclaron, not Megatron, he swore to make a name of his own.</p>
   <p>He trained relentlessly, mastering one of Valclaron’s signature disarming techniques, and earned his way through the pits from Group 10 to Champion of Kaon. The Arena Board feared him, and even Megatron, upon finally meeting him, recognized his drive and results. Though their relationship began with silence and suspicion, Thundertron earned his place—not through lineage, but through proof.</p>
 </div>
 
 <!-- Current Role -->
-<h2 style="text-align:center; margin-top:30px;">Current Role</h2>
-<div style="text-align:center; margin-bottom:20px;">
+<h2 style="text-align:left; margin-top:30px;">Current Role</h2>
+<div style="text-align:left; margin-bottom:20px;">
   <p>Thundertron commands Amalgamated Pretense, an elite but non-standard Decepticon unit stationed on Daraknus—a harsh, storm-wracked world hidden by an electromagnetic barrier. Under his leadership, the team created a functioning Energon production and delivery system capable of fueling Cybertron’s war machine faster than the planet can consume it.</p>
   <p>He personally oversees the storm defense array project, transforming Daraknus into a living weapon, and recently proposed a planetary lightning-harvesting defense system with the help of Raider and the Constructicons. His forces include trusted specialists such as Syphonic, Sustain, Windcon, Valclaron, EV, Occult, and Substance.</p>
 </div>
 
 <!-- Notable Achievements -->
-<h2 style="text-align:center; margin-top:30px;">Notable Achievements</h2>
-<div style="text-align:center; margin-bottom:20px;">
+<h2 style="text-align:left; margin-top:30px;">Notable Achievements</h2>
+<div style="text-align:left; margin-bottom:20px;">
   <ul>
     <li>Rose from unknown gladiator to Champion of Kaon in under a solar cycle</li>
     <li>Built the Turbulence, a Decepticon war cruiser</li>
@@ -100,8 +100,8 @@ title: Thundertron
 </div>
 
 <!-- Personality -->
-<h2 style="text-align:center; margin-top:30px;">Personality</h2>
-<div style="text-align:center; margin-bottom:20px;">
+<h2 style="text-align:left; margin-top:30px;">Personality</h2>
+<div style="text-align:left; margin-bottom:20px;">
   <p>Thundertron is driven, coldly analytical, and often silent when others would posture. He is not interested in fame or praise—but in results, control, and the survival of the Decepticon cause. He bears no arrogance about his connection to Megatron and does not seek to replace him. What he seeks is freedom, command of his own purpose, and the respect he has earned through action.</p>
   <p>He rarely trusts, but those in his command—especially EV, Valclaron, and Syphonic—have learned that beneath his armor lies a deep fire, not for power, but for purpose.</p>
 </div>
