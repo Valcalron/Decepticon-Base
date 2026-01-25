@@ -43,7 +43,7 @@ title: Thundertron
 <!-- Signature -->
 <h2 style="text-align:center; margin-top:30px;">Signature</h2>
 <div style="text-align:center;">
-  <img src="{{ '/assets/Thundertron-signature.jpg' | relative_url }}" alt="Thundertron Signature" style="max-width:100%; height:auto;">
+  <img src="{{ 'assets/hmwsignatures/Thundertron Decep.gif' | relative_url }}" alt="Thundertron Signature" style="max-width:100%; height:auto;">
 </div>
 
 <!-- Appearance -->
