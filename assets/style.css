@@ -1,3 +1,21 @@
+/* HMW Page: Overlay the HMW banner on the lower half of the main header */
+.hmw .banner {
+  position: relative;  /* This makes the main banner behave as a reference for absolute positioning of the lower banner */
+}
+
+.hmw .hmw-banner {
+  position: absolute;  /* This lets the HMW banner sit on top of the header */
+  bottom: 0;  /* This makes sure it's positioned at the bottom of the header */
+  left: 0;
+  width: 100%;  /* Full width of the header */
+  z-index: 2;  /* Ensures it appears above the background */
+  height: 50%;  /* Makes it cover the lower half of the header */
+}
+
+.hmw .main {
+  padding-top: 50%; /* Pushes the content down, leaving space for the banner */
+}
+
 /* ===== TECH SPEC BAR SYSTEM (Decepticon Purple) ===== */
 
 .techspecs{
