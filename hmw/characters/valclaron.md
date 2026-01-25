@@ -3,11 +3,16 @@ layout: default
 title: Valclaron
 ---
 
-<!-- Name GIF -->
-<div>
-  <img src="{{ 'assets/hmw-names/Valclaron Eng.gif' | relative_url }}"
+<!-- Character Name Banner -->
+<div style="margin-bottom:25px;">
+  <img src="{{ '/assets/hmw-names/valclaron.gif' | relative_url }}"
        alt="Valclaron"
-       style="width:260px; height:auto;">
+       style="
+         width:100%;
+         max-width:900px;
+         height:auto;
+         display:block;
+       ">
 </div>
 
 <h1 style="margin-top:15px;">Valclaron</h1>
