@@ -1,7 +1,34 @@
 ---
 layout: default
 title: HMW
+body_class: hmw
 ---
+
+<!-- HMW Banner in Lower Half -->
+<div class="banner">
+  <img src="{{ '/assets/Decepticonbannor1.jpg' | relative_url }}" alt="Decepticon Base banner">
+  
+  <!-- HMW Banner (lower half only) -->
+  <div class="hmw-banner">
+    <img src="{{ '/assets/hmwbannorbig.gif' | relative_url }}"
+         alt="HMW Banner"
+         style="width:100%; height:auto;">
+  </div>
+</div>
+
+<!-- Main Content -->
+<div class="main">
+  <div class="nav">
+    <!-- Your HMW navigation here -->
+  </div>
+
+  <div class="content">
+    <div class="content-inner">
+      {{ content }}
+    </div>
+  </div>
+</div>
+
 
 <img src="{{ '/assets/bannerhmw11.jpg' | relative_url }}"
      alt="Heavy Metal War Banner"
