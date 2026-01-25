@@ -5,7 +5,7 @@ title: Valclaron
 
 <!-- Character Name Banner -->
 <div style="margin-bottom:25px;">
-  <img src="{{ '/assets/hmw-names/valclaron.gif' | relative_url }}"
+  <img src="{{ 'assets/hmw-names/Valclaron Eng.gif' | relative_url }}"
        alt="Valclaron"
        style="
          width:100%;
