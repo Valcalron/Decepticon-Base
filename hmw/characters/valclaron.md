@@ -91,7 +91,7 @@ title: Valclaron
 <h2>Signature</h2>
 
 <div>
-<img src="{{ '/assets/hmwsignatures/valclaron.gif' | relative_url }}"
+<img src="{{ 'assets/hmwsignatures/Valclaron Signature Decepticon1.gif' | relative_url }}"
      alt="Valclaron Signature"
      style="max-width:100%; height:auto;">
 
