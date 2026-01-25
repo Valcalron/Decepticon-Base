@@ -8,13 +8,21 @@
   position: absolute;
   bottom: 0;
   width: 100%;
-  height: 50%; /* Adjust this as needed */
+  height: 50%;  /* Adjust this to get the right amount of banner overlap */
   z-index: 2;
 }
 
 .hmw .main {
-  padding-top: 0; /* Remove the top padding to allow the content to move up */
+  padding-top: 0; /* Ensures the content starts right after the banner */
+  margin-top: -5px; /* Slightly pulls the content to reduce any small space */
 }
+
+/* Optional: Remove any padding or margin on the body */
+body {
+  padding: 0;
+  margin: 0;
+}
+
 
 
 /* ===== TECH SPEC BAR SYSTEM (Decepticon Purple) ===== */
