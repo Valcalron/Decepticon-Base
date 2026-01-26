@@ -1,27 +1,18 @@
-/* For HMW Pages */
-.hmw .banner {
-  position: relative;
-  width: 100%;
+/* HMW Specific Adjustments */
+.hmw .content-inner {
+  margin-top: 0; /* Remove margin-top if it's there */
+  padding-top: 0; /* Remove any unnecessary padding */
 }
 
-.hmw .hmw-banner {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 50%;  /* Adjust this to get the right amount of banner overlap */
-  z-index: 2;
-}
-
+/* Remove gap from the "World Builder" area */
 .hmw .main {
-  padding-top: 0; /* Ensures the content starts right after the banner */
-  margin-top: -5px; /* Slightly pulls the content to reduce any small space */
+  padding: 0; /* Remove any unwanted padding */
 }
 
-/* Optional: Remove any padding or margin on the body */
-body {
-  padding: 0;
-  margin: 0;
+.hmw .main .content {
+  margin-top: 0; /* Ensure there is no space above content */
 }
+
 
 
 
