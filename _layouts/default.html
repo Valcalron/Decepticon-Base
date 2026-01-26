@@ -1,14 +1,14 @@
-<!doctype html> 
+<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ page.title | default: "Decepticon Base" }}</title>
 
+  <!-- Orbitron Font -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
 
   <style>
     :root{
@@ -22,8 +22,9 @@
 
     body{
       margin:0;
-      font-family: "Orbitron", Arial, sans-serif;
+      font-family:"Orbitron", Arial, sans-serif;
       color:var(--text);
+
       background-image: url("{{ '/assets/Cybertronleft.png' | relative_url }}");
       background-size: cover;
       background-position: center;
@@ -37,10 +38,12 @@
       flex-direction:column;
     }
 
+    /* ===== TOP BANNER ===== */
     .banner{
       width:100%;
       border-bottom:1px solid var(--border);
       background: rgba(0,0,0,0.85);
+      position:relative;
     }
 
     .banner img{
@@ -50,16 +53,14 @@
       display:block;
     }
 
-    .home .banner img {
-      height: 450px;  /* Adjust as needed */
-    }
-
+    /* ===== MAIN LAYOUT ===== */
     .main{
       flex:1;
       display:flex;
       width:100%;
     }
 
+    /* ===== LEFT NAV ===== */
     .nav{
       width:var(--sidebar);
       background: rgba(0,0,0,0.75);
@@ -81,6 +82,7 @@
       border:1px solid rgba(255,255,255,0.12);
     }
 
+    /* ===== CONTENT AREA ===== */
     .content{
       flex:1;
       padding:18px;
@@ -90,12 +92,16 @@
       max-width:1100px;
       margin:0 auto;
       padding:18px;
-      min-height:70vh;
+
+      /* ✅ FIX: REMOVE FORCED GAP */
+      min-height:auto;
+
       background: rgba(0,0,0,0.72);
       border:1px solid var(--border);
       border-radius:12px;
     }
 
+    /* ===== FOOTER ===== */
     .footer{
       border-top:1px solid var(--border);
       background: rgba(0,0,0,0.85);
@@ -106,44 +112,67 @@
 
     .footer a{ color:var(--link); }
 
-    h1, h2, h3{
-      font-family: "Orbitron", Arial, sans-serif;
-      letter-spacing: 1px;
+    h1,h2,h3{
+      font-family:"Orbitron", Arial, sans-serif;
+      letter-spacing:1px;
     }
 
-    @media (max-width: 860px){
+    /* ===== MOBILE FIX ===== */
+    @media (max-width:860px){
       .main{ flex-direction:column; }
+
       .nav{
         width:100%;
         border-right:none;
         border-bottom:1px solid var(--border);
       }
-      .content-inner{ max-width:100%; }
-      .banner img{ height:180px; }
+
+      .content-inner{
+        max-width:100%;
+      }
+
+      .banner img{
+        height:180px;
+      }
+    }
+
+    /* ===== HMW Header Overlay ===== */
+    body.hmw .banner::after{
+      content:"";
+      position:absolute;
+      bottom:0;
+      left:0;
+      width:100%;
+      height:50%;
+      background-image:url("{{ '/assets/hmwbannorbig.gif' | relative_url }}");
+      background-repeat:no-repeat;
+      background-position:center bottom;
+      background-size:contain;
+      pointer-events:none;
     }
 
   </style>
 </head>
 
-<body class="{{ page.body_class }}"> <!-- Add body_class for Home page customization -->
+<body class="{{ page.body_class }}">
+
   <div class="page">
+
+    <!-- TOP SITE HEADER -->
     <div class="banner">
-  <img src="{{ '/assets/Decepticonbannor1.jpg' | relative_url }}" alt="Decepticon Base banner">
+      <img src="{{ '/assets/Decepticonbannor1.jpg' | relative_url }}"
+           alt="Decepticon Base Banner">
+    </div>
 
-  {% if page.body_class == "hmw" %}
-    <img class="hmw-overlay"
-         src="{{ '/assets/hmwbannorbig.gif' | relative_url }}"
-         alt="Heavy Metal War">
-  {% endif %}
-</div>
-
-
+    <!-- MAIN BODY -->
     <div class="main">
+
+      <!-- NAV -->
       <div class="nav">
         <a href="{{ '/' | relative_url }}">HOME</a>
         <a href="{{ '/hmw/' | relative_url }}">HMW</a>
         <a href="{{ '/art/' | relative_url }}">ART</a>
-        <a href="https://forumsoundwave.jcink.net/index.php?act=idx" target="_blank" rel="noopener">FORUM</a>
+        <a href="https://forumsoundwave.jcink.net/index.php?act=idx" target="_blank">FORUM</a>
         <a href="{{ '/fanfiction/' | relative_url }}">FANFICTION</a>
         <a href="{{ '/commissions/' | relative_url }}">COMMISSIONS</a>
         <a href="{{ '/sigs-gifts/' | relative_url }}">SIGS AND GIFTS</a>
@@ -152,18 +181,22 @@
         <a href="{{ '/disclaimer.html' | relative_url }}">DISCLAIMER</a>
       </div>
 
+      <!-- PAGE CONTENT -->
       <div class="content">
         <div class="content-inner">
           {{ content }}
         </div>
       </div>
+
     </div>
 
+    <!-- FOOTER -->
     <div class="footer">
       Transformers is property of Hasbro. This is a non-commercial fan site. No profit is made.
       <a href="{{ '/disclaimer.html' | relative_url }}">Disclaimer</a>
     </div>
 
   </div>
+
 </body>
 </html>
