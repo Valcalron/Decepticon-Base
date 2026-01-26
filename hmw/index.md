@@ -1,35 +1,87 @@
 ---
 layout: default
-title: Heavy Metal War
+title: HMW
 body_class: hmw
 ---
 
-<!-- HMW Banner in Lower Half -->
-<div class="hmw">
-  <div class="banner">
-    <img src="{{ '/assets/Decepticonbannor1.jpg' | relative_url }}" alt="Decepticon Base banner">
-  </div>
-  
-  <!-- Overlay HMW banner -->
-  <div class="hmw-banner">
-    <img src="{{ '/assets/hmwbannorbig.gif' | relative_url }}" alt="Heavy Metal War Banner">
-  </div>
+<div style="text-align:center; margin-top:10px;">
+  <img src="{{ '/assets/myteam.jpg' | relative_url }}"
+       alt="Amalgamated Pretense"
+       style="max-width:100%; height:auto;">
 </div>
 
-<!-- Main Content Section -->
-<div class="main">
-  <div class="nav">
-    <!-- HMW navigation will go here -->
-    <a href="{{ '/hmw/characters' | relative_url }}">Characters</a>
-    <a href="{{ '/hmw/teams' | relative_url }}">Teams</a>
-    <a href="{{ '/hmw/stats' | relative_url }}">Stats</a>
-  </div>
+<h2 style="text-align:center; margin-top:30px;">Active Members</h2>
 
-  <div class="content">
-    <div class="content-inner">
-      <h2>Welcome to Heavy Metal War</h2>
-      <p>This is your battlefield. Navigate through our various characters and teams to engage in the ultimate war. Select your Decepticon or Autobot to begin!</p>
-    </div>
-  </div>
+<div style="display:flex; gap:30px; flex-wrap:wrap; justify-content:center; margin-top:20px;">
+
+  <!-- Thundertron (Team Leader) -->
+  <a href="{{ '/hmw/characters/thundertron.html' | relative_url }}" style="display:block; text-align:center;">
+    <img src="{{ '/assets/hmw-names/thundertronopy.gif' | relative_url }}"
+         alt="Thundertron"
+         style="width:220px; height:auto; display:block;">
+    <div style="margin-top:8px; font-size:16px; color:#e7eef8;">Team Leader</div>
+  </a>
+
+  <a href="{{ '/hmw/characters/valclaron.html' | relative_url }}">
+    <img src="{{ '/assets/hmw-names/Valclaron Eng.gif' | relative_url }}" alt="Valclaron" style="width:220px; height:auto;">
+  </a>
+
+  <a href="{{ '/hmw/characters/raider.html' | relative_url }}">
+    <img src="{{ '/assets/hmw-names/Raiderfontgif.gif' | relative_url }}" alt="Raider" style="width:200px; height:auto;">
+  </a>
+
+  <a href="{{ '/hmw/characters/soundwave.html' | relative_url }}">
+    <img src="{{ '/assets/hmw-names/Soundwavesig.gif' | relative_url }}" alt="Soundwave" style="width:200px; height:auto;">
+  </a>
+
+  <a href="{{ '/hmw/characters/substance.html' | relative_url }}">
+    <img src="{{ '/assets/hmw-names/Substancesig.gif' | relative_url }}" alt="Substance" style="width:200px; height:auto;">
+  </a>
+
+  <a href="{{ '/hmw/characters/sustain.html' | relative_url }}">
+    <img src="{{ '/assets/hmw-names/Sustain Eng.gif' | relative_url }}" alt="Sustain" style="width:200px; height:auto;">
+  </a>
+
+  <a href="{{ '/hmw/characters/eclipse-velocity.html' | relative_url }}">
+    <img src="{{ '/assets/hmw-names/Eclipse copy.gif' | relative_url }}" alt="Eclipse Velocity" style="width:200px; height:auto;">
+  </a>
+
+  <a href="{{ '/hmw/characters/occult.html' | relative_url }}">
+    <img src="{{ '/assets/hmw-names/Occult Eng.gif' | relative_url }}" alt="Occult" style="width:200px; height:auto;">
+  </a>
+
+  <a href="{{ '/hmw/characters/windcon.html' | relative_url }}">
+    <img src="{{ '/assets/hmw-names/Windcon Eng.gif' | relative_url }}" alt="Windcon" style="width:200px; height:auto;">
+  </a>
+
+  <a href="{{ '/hmw/characters/sevrion.html' | relative_url }}">
+    <img src="{{ '/assets/hmw-names/Sevrionsig.gif' | relative_url }}" alt="Sevrion" style="width:200px; height:auto;">
+  </a>
+
+  <a href="{{ '/hmw/characters/nyxara.html' | relative_url }}">
+    <img src="{{ '/assets/hmw-names/Nyxsig.gif' | relative_url }}" alt="Nyxara" style="width:200px; height:auto;">
+  </a>
+
+  <a href="{{ '/hmw/characters/amazon.html' | relative_url }}">
+    <img src="{{ '/assets/hmw-names/Amazon signauture.gif' | relative_url }}" alt="Amazon" style="width:200px; height:auto;">
+  </a>
+
 </div>
 
+<h2 style="text-align:center; margin-top:50px;">Retirement</h2>
+
+<div style="display:flex; gap:30px; flex-wrap:wrap; justify-content:center; margin-top:20px;">
+
+  <a href="{{ '/hmw/characters/cygnus.html' | relative_url }}">
+    <img src="{{ '/assets/Cygnus.jpg' | relative_url }}" alt="Cygnus" style="width:200px; height:auto; opacity:0.6;">
+  </a>
+
+  <a href="{{ '/hmw/characters/tammuz.html' | relative_url }}">
+    <img src="{{ '/assets/Tammuz.jpg' | relative_url }}" alt="Tammuz" style="width:200px; height:auto; opacity:0.6;">
+  </a>
+
+  <a href="{{ '/hmw/characters/solarcat.html' | relative_url }}">
+    <img src="{{ '/assets/SolarCat.jpg' | relative_url }}" alt="SolarCat" style="width:200px; height:auto; opacity:0.6;">
+  </a>
+
+</div>
