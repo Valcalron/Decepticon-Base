@@ -3,6 +3,8 @@ layout: default
 title: HMW
 body_class: hmw
 ---
+<!-- HMW Banner at the Top of Content -->
+<img src="{{ '/assets/bannerhmw11.jpg' | relative_url }}" alt="Heavy Metal War Banner" style="max-width:100%; height:auto; display:block; margin: 0 auto 20px auto;">
 
 <div style="text-align:center; margin-top:10px;">
   <img src="{{ '/assets/myteam.jpg' | relative_url }}"
@@ -15,13 +17,19 @@ body_class: hmw
 <div class="hmw-roster">
 
 
-  <!-- Thundertron (Team Leader) -->
-  <a href="{{ '/hmw/characters/thundertron.html' | relative_url }}" style="display:block; text-align:center;">
+ <!-- Thundertron (Team Leader) -->
+<div style="text-align:center;">
+  <a href="{{ '/hmw/characters/thundertron.html' | relative_url }}">
     <img src="{{ '/assets/hmw-names/thundertronopy.gif' | relative_url }}"
          alt="Thundertron"
-         style="width:220px; height:auto; display:block;">
-    <div style="margin-top:8px; font-size:16px; color:#e7eef8;">Team Leader</div>
+         style="width:220px; height:auto; display:block; margin:0 auto;">
   </a>
+
+  <div style="font-size:14px; color:#e7eef8; margin-top:4px;">
+    Team Leader
+  </div>
+</div>
+
 
   <a href="{{ '/hmw/characters/valclaron.html' | relative_url }}">
     <img src="{{ '/assets/hmw-names/Valclaron Eng.gif' | relative_url }}" alt="Valclaron" style="width:220px; height:auto;">
