@@ -25,68 +25,52 @@
   max-width: 100%; /* Ensure content area expands correctly */
 }
 
-/* Adjust any margins or padding from elements inside .content-inner */
-.hmw .content-inner img {
-  margin: 0; /* Ensure no image margin */
+/* Banner Adjustments */
+.hmw .banner {
+  width: 100%;
+  position: relative;
+  z-index: 1;
 }
 
-.hmw .nav {
-  margin-top: 0; /* Remove unnecessary top margin for nav */
+.hmw .hmw-banner {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%; /* Full width of the header */
+  z-index: 2; /* Makes sure it stays on top of the background */
+  height: 50%; /* Adjust this value to control how much of the header it covers */
 }
 
-/* Remove the "extra margin" for the World Builder area */
+.hmw .main {
+  padding-top: 50%; /* Add space for the banner, so content won't overlap */
+  margin-top: 0; /* Remove any additional gaps */
+}
+
+.hmw .main .content {
+  margin-top: 0; /* Ensure there is no space above content */
+}
+
 .hmw .main .content .world-builder {
   margin-top: 0;
   padding: 0;
 }
 
-/* Fix any unwanted gaps from the header */
-.hmw .banner {
-  margin-bottom: 0;
-  padding: 0;
+.hmw .banner img,
+.hmw .hmw-banner img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
-/* Remove the second banner and prevent the gap */
-.hmw .hmw-banner {
-  display: none; /* Hide the extra banner */
+/* Additional Styling for HMW Content */
+.hmw .nav {
+  background-color: rgba(0, 0, 0, 0.75); /* Dark background for nav */
+  padding: 15px;
+  margin-top: 0;
 }
 
-/* ===== TECH SPEC BAR SYSTEM (Decepticon Purple) ===== */
-
-.techspecs{
-  width: 360px;
-  margin-top: 10px;
-}
-
-.stat{
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  margin: 6px 0;
-  font-family: Orbitron, Arial, sans-serif;
-  font-size: 14px;
-}
-
-.stat .label{
-  width: 45px;
-  font-weight: bold;
-  color: #e7eef8;
-}
-
-.stat .bar{
-  flex: 1;
-  height: 10px;
-  background: rgba(255,255,255,0.15);
-  border: 1px solid rgba(255,255,255,0.2);
-}
-
-.stat .fill{
-  height: 100%;
-  background: #7d2cff; /* Decepticon Purple */
-}
-
-.stat .num{
-  width: 22px;
-  text-align: right;
-  color: #e7eef8;
+/* Content and inner content adjustments */
+.hmw .content-inner {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for content */
 }
