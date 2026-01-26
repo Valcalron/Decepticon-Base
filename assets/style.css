@@ -2,7 +2,7 @@
 .hmw .page {
   display: flex;
   flex-direction: column;
-  height: 100vh; /* Ensure full page usage */
+  height: 100vh;
 }
 
 .hmw .main {
@@ -11,6 +11,17 @@
   flex: 1; /* Ensure it takes up the available space */
   padding: 0; /* Remove any default padding */
   margin-top: 0; /* Remove any top margin */
+}
+
+.hmw .banner {
+  margin-bottom: 0;
+  padding: 0;
+  height: auto; /* Make sure it only takes up the space needed */
+}
+
+/* Hide the extra banner under the first one */
+.hmw .hmw-banner {
+  display: none; /* Remove the second banner */
 }
 
 .hmw .content {
@@ -25,52 +36,8 @@
   max-width: 100%; /* Ensure content area expands correctly */
 }
 
-/* Banner Adjustments */
-.hmw .banner {
-  width: 100%;
-  position: relative;
-  z-index: 1;
-}
-
-.hmw .hmw-banner {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%; /* Full width of the header */
-  z-index: 2; /* Makes sure it stays on top of the background */
-  height: 50%; /* Adjust this value to control how much of the header it covers */
-}
-
-.hmw .main {
-  padding-top: 50%; /* Add space for the banner, so content won't overlap */
-  margin-top: 0; /* Remove any additional gaps */
-}
-
-.hmw .main .content {
-  margin-top: 0; /* Ensure there is no space above content */
-}
-
+/* Remove the "extra margin" for the World Builder area */
 .hmw .main .content .world-builder {
   margin-top: 0;
   padding: 0;
-}
-
-.hmw .banner img,
-.hmw .hmw-banner img {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-/* Additional Styling for HMW Content */
-.hmw .nav {
-  background-color: rgba(0, 0, 0, 0.75); /* Dark background for nav */
-  padding: 15px;
-  margin-top: 0;
-}
-
-/* Content and inner content adjustments */
-.hmw .content-inner {
-  padding: 10px;
-  background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent background for content */
 }
