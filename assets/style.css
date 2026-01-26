@@ -57,3 +57,27 @@
 .hmw .nav a:hover {
   color: #7d2cff; /* Highlight color on hover */
 }
+/* ===== HMW overlay banner (ONLY on pages with body_class: hmw) ===== */
+
+.banner{
+  position: relative; /* allows overlay positioning */
+}
+
+body.hmw .banner .hmw-overlay{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 50%;        /* lower half */
+  object-fit: cover;
+  z-index: 5;
+  pointer-events: none;
+}
+
+/* Remove any accidental spacing under the banner */
+body.hmw .banner,
+body.hmw .banner img{
+  margin: 0;
+  padding: 0;
+  display: block;
+}
