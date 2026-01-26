@@ -128,8 +128,15 @@
 <body class="{{ page.body_class }}"> <!-- Add body_class for Home page customization -->
   <div class="page">
     <div class="banner">
-      <img src="{{ '/assets/Decepticonbannor1.jpg' | relative_url }}" alt="Decepticon Base banner">
-    </div>
+  <img src="{{ '/assets/Decepticonbannor1.jpg' | relative_url }}" alt="Decepticon Base banner">
+
+  {% if page.body_class == "hmw" %}
+    <img class="hmw-overlay"
+         src="{{ '/assets/hmwbannorbig.gif' | relative_url }}"
+         alt="Heavy Metal War">
+  {% endif %}
+</div>
+
 
     <div class="main">
       <div class="nav">
