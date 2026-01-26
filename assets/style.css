@@ -1,18 +1,50 @@
-/* HMW Specific Adjustments */
-.hmw .content-inner {
-  margin-top: 0; /* Remove margin-top if it's there */
-  padding-top: 0; /* Remove any unnecessary padding */
+/* ===== HMW Page Specific Adjustments ===== */
+.hmw .page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Ensure full page usage */
 }
 
-/* Remove gap from the "World Builder" area */
 .hmw .main {
-  padding: 0; /* Remove any unwanted padding */
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  flex: 1; /* Ensure it takes up the available space */
+  padding: 0; /* Remove any default padding */
+  margin-top: 0; /* Remove any top margin */
 }
 
-.hmw .main .content {
-  margin-top: 0; /* Ensure there is no space above content */
+.hmw .content {
+  display: flex;
+  flex-direction: column; /* Stack the content */
+  padding: 0; /* Remove padding */
 }
 
+.hmw .content-inner {
+  margin-top: 0;
+  padding-top: 0;
+  max-width: 100%; /* Ensure content area expands correctly */
+}
+
+/* Adjust any margins or padding from elements inside .content-inner */
+.hmw .content-inner img {
+  margin: 0; /* Ensure no image margin */
+}
+
+.hmw .nav {
+  margin-top: 0; /* Remove unnecessary top margin for nav */
+}
+
+/* Remove the "extra margin" for the World Builder area */
+.hmw .main .content .world-builder {
+  margin-top: 0;
+  padding: 0;
+}
+
+/* Fix any unwanted gaps from the header */
+.hmw .banner {
+  margin-bottom: 0;
+  padding: 0;
+}
 
 
 
