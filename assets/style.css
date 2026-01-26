@@ -81,3 +81,13 @@ body.hmw .banner img{
   padding: 0;
   display: block;
 }
+/* HMW roster: keep it tighter (not too wide) and closer to the top */
+.hmw .hmw-roster{
+  max-width: 900px;          /* controls how wide the team can spread */
+  margin: 10px auto 0 auto;  /* closer to the banner */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 18px 26px;            /* row gap / column gap */
+  padding: 0;
+}
