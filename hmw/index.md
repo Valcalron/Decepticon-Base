@@ -12,7 +12,8 @@ body_class: hmw
 
 <h2 style="text-align:center; margin-top:30px;">Active Members</h2>
 
-<div style="display:flex; gap:30px; flex-wrap:wrap; justify-content:center; margin-top:20px;">
+<div class="hmw-roster">
+
 
   <!-- Thundertron (Team Leader) -->
   <a href="{{ '/hmw/characters/thundertron.html' | relative_url }}" style="display:block; text-align:center;">
