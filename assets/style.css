@@ -48,4 +48,45 @@
 
 /* Remove the second banner and prevent the gap */
 .hmw .hmw-banner {
-  display: none; /* Hide the
+  display: none; /* Hide the extra banner */
+}
+
+/* ===== TECH SPEC BAR SYSTEM (Decepticon Purple) ===== */
+
+.techspecs{
+  width: 360px;
+  margin-top: 10px;
+}
+
+.stat{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+  font-family: Orbitron, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.stat .label{
+  width: 45px;
+  font-weight: bold;
+  color: #e7eef8;
+}
+
+.stat .bar{
+  flex: 1;
+  height: 10px;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.stat .fill{
+  height: 100%;
+  background: #7d2cff; /* Decepticon Purple */
+}
+
+.stat .num{
+  width: 22px;
+  text-align: right;
+  color: #e7eef8;
+}
