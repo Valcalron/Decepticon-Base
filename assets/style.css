@@ -1,0 +1,59 @@
+/* ===== HMW Page Specific Adjustments ===== */
+.hmw .page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Ensure full page usage */
+}
+
+.hmw .main {
+  display: flex;
+  flex-direction: column; /* Stack elements vertically */
+  flex: 1; /* Ensure it takes up the available space */
+  padding: 0; /* Remove any default padding */
+  margin-top: 0; /* Remove any top margin */
+}
+
+.hmw .content {
+  display: flex;
+  flex-direction: column; /* Stack the content */
+  padding: 0; /* Remove padding */
+}
+
+.hmw .content-inner {
+  margin-top: 0;
+  padding-top: 0;
+  max-width: 100%; /* Ensure content area expands correctly */
+}
+
+/* Adjust any margins or padding from elements inside .content-inner */
+.hmw .content-inner img {
+  margin: 0; /* Ensure no image margin */
+}
+
+.hmw .nav {
+  margin-top: 0; /* Remove unnecessary top margin for nav */
+}
+
+/* Remove the "extra margin" for the World Builder area */
+.hmw .main .content .world-builder {
+  margin-top: 0;
+  padding: 0;
+}
+
+/* Fix any unwanted gaps from the header */
+.hmw .banner {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+/* Adjust navigation bar inside HMW */
+.hmw .nav a {
+  margin: 10px 0;
+  text-decoration: none;
+  color: #e7eef8;
+  font-family: "Orbitron", sans-serif;
+}
+
+.hmw .nav a:hover {
+  color: #7d2cff; /* Highlight color on hover */
+}
