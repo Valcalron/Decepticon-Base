@@ -5,6 +5,7 @@
   height: 100vh; /* Ensure full page usage */
 }
 
+
 .hmw .main {
   display: flex;
   flex-direction: column; /* Stack elements vertically */
