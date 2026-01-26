@@ -23,6 +23,8 @@
   margin-top: 0;
   padding-top: 0;
   max-width: 100%; /* Ensure content area expands correctly */
+  min-height: 0 !important; /* Fix the unwanted min-height gap */
+  padding-top: 10px; /* Space the content slightly from the top */
 }
 
 /* Adjust any margins or padding from elements inside .content-inner */
@@ -46,48 +48,41 @@
   padding: 0;
 }
 
-/* Adjust navigation bar inside HMW */
-.hmw .nav a {
-  margin: 10px 0;
-  text-decoration: none;
-  color: #e7eef8;
-  font-family: "Orbitron", sans-serif;
+/* ===== TECH SPEC BAR SYSTEM (Decepticon Purple) ===== */
+.techspecs{
+  width: 360px;
+  margin-top: 10px;
 }
 
-.hmw .nav a:hover {
-  color: #7d2cff; /* Highlight color on hover */
-}
-/* ===== HMW overlay banner (ONLY on pages with body_class: hmw) ===== */
-
-.banner{
-  position: relative; /* allows overlay positioning */
-}
-
-body.hmw .banner .hmw-overlay{
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 50%;        /* lower half */
-  object-fit: cover;
-  z-index: 5;
-  pointer-events: none;
-}
-
-/* Remove any accidental spacing under the banner */
-body.hmw .banner,
-body.hmw .banner img{
-  margin: 0;
-  padding: 0;
-  display: block;
-}
-/* HMW roster: keep it tighter (not too wide) and closer to the top */
-.hmw .hmw-roster{
-  max-width: 900px;          /* controls how wide the team can spread */
-  margin: 10px auto 0 auto;  /* closer to the banner */
+.stat{
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 18px 26px;            /* row gap / column gap */
-  padding: 0;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0;
+  font-family: Orbitron, Arial, sans-serif;
+  font-size: 14px;
+}
+
+.stat .label{
+  width: 45px;
+  font-weight: bold;
+  color: #e7eef8;
+}
+
+.stat .bar{
+  flex: 1;
+  height: 10px;
+  background: rgba(255,255,255,0.15);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.stat .fill{
+  height: 100%;
+  background: #7d2cff; /* Decepticon Purple */
+}
+
+.stat .num{
+  width: 22px;
+  text-align: right;
+  color: #e7eef8;
 }
